@@ -5,7 +5,7 @@ import math
 
 class SimulatedAnnealing:
     currentState:State
-    temp:float = 10
+    temp:float = 700
 
     def __inti__(self):
         self.currentState = None
@@ -67,7 +67,6 @@ class SimulatedAnnealing:
         
         deltaE = newState.evaluation - self.currentState.evaluation
         prop = math.exp(-1 * (deltaE / self.temp))
-        print(prop)
         randomNum = random.random()
 
         if randomNum < prop:
