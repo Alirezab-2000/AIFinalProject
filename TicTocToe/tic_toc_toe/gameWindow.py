@@ -112,7 +112,7 @@ class GameWindow(QMainWindow):
                 self.buttons[i][j].setGeometry(90*i + 20, 90*j + 20, 80, 80) 
                 self.buttons[i][j].setFont(QFont(QFont('Times', 19))) 
                 self.buttons[i][j].clicked.connect(self.userAct)
-  
+
         self.label = QLabel(self) 
         self.label.setGeometry(20, 320, 260, 40) 
         self.label.setStyleSheet("QLabel{border : 1px solid blue; background : white;}") 
